@@ -1,0 +1,45 @@
+<%- include ('header.ejs') %>
+            <div class="jumbotron">
+                    <div class="update-form">
+                        <form action="update" method="POST">
+                            <div class="container-fluid" id='room-create'>
+                                <div class="row">
+                                    <div class="col-12 h2 mt-5 text-center">Change your password</div>
+                                </div>
+                                
+                                <div class="row mt-2">
+                                    <div class="col-12 text-center">
+                                        <span class="form-text small text-danger" id='err-msg'></span>
+                                    </div>
+                    
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3">
+                                        <label for="room-name">User Name:</label>
+                                        <input type="text" name="username" class="form-control rounded-0" placeholder="Username">
+                                    </div>
+                    
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3">
+                                        <label for="your-name">Current password:</label>
+                                        <input type="password" name="password" class="form-control rounded-0" placeholder="Current Password">
+                                    </div>
+
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3">
+                                        <label for="your-name">New password:</label>
+                                        <input type="password" name="newpass" class="form-control rounded-0" placeholder="New Password">
+                                    </div>
+                    
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3">
+                                        <button id='create-room' class="btn btn-block rounded-0 btn-info" onclick="update()">Update</button>
+                                    </div>
+                    
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3" id='room-created'></div>
+                                </div>
+                            </div>
+                        </form>
+					</div>
+                </div>    
+					<script>
+						function update(){
+							alert("Succesfully! Your password has been update.");
+						}
+					</script>
+<%- include ('footer.ejs') %>

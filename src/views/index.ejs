@@ -1,0 +1,15 @@
+<%- include ('header.ejs') %>
+            <div class="jumbotron">
+                <h1>Trang chủ</h1>
+                <p>Chào mừng <%=data[0].username%> tới Elearning!!!</p> 
+                <p>
+                    <a class="btn btn-lg btn-primary" href="/profile">Thông tin cá nhân »</a>
+                    <a class="btn btn-lg btn-primary" href="/update">Đổi mật khẩu »</a>
+                    <a class="btn btn-lg btn-primary" href="/createroom">Tạo nhóm »</a>
+                    <a class="btn btn-lg btn-primary" href="/yourrooms">Các nhóm của bạn »</a>
+                    <a class="btn btn-lg btn-primary" href="/manageroom">Quản lý nhóm »</a>
+                    <a class="btn btn-lg btn-primary" href="/joinroom">Tham gia »</a>
+                </p>
+            </div>
+        </div>
+ <%- include ('footer.ejs') %>

@@ -1,0 +1,23 @@
+<%- include ('header.ejs') %>
+            <div class="jumbotron">
+                    <h1>Các nhóm đã tham gia</h1>
+                    <table id="table" >  
+                        <thead>  
+                            <tr>  
+                                <th>Tên nhóm</th>  
+                            </tr>  
+                        </thead>  
+                         <tbody>  
+                         <% data.forEach(function (data) { %>
+                            <tr>  
+                                <td><%= data.name %></td>  
+                                <td>
+                                    <button class="btn btn-block rounded-1 btn-info"><a href='/<%=data.link %>'>Vào</a></button>
+                                </td>
+                                <td><button id="enter-room" class="btn btn-block rounded-1 btn-danger">Rời nhóm</button></td>
+                            </tr>                                
+                         <% }) %>
+                         </tbody>
+                    </table>   
+                </div>  
+<%- include ('footer.ejs') %>

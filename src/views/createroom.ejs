@@ -1,0 +1,46 @@
+<%- include ('header.ejs') %>
+            <div class="jumbotron">
+                    <div class="create-form">
+                        <form action="createroom" method="POST">
+                            <div class="container-fluid" id='room-create'>
+                                <div class="row">
+                                    <div class="col-12 h2 mt-5 text-center">Tạo nhóm</div>
+                                </div>
+                                
+                                <div class="row mt-2">
+                                    <div class="col-12 text-center">
+                                        <span class="form-text small text-danger" id='err-msg'></span>
+                                    </div>
+                    
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3">
+                                        <label for="room-name">Tên nhóm</label>
+                                        <input type="text" id='room-name' name="roomname" class="form-control rounded-0" placeholder="Tên nhóm">
+                                    </div>
+                                    
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3">
+                                        <label for="your-name">Tên bạn trong nhóm</label>
+                                        <input type="text" id='your-name' name="adminname" class="form-control rounded-0" placeholder="Tên bạn trong nhóm">
+                                    </div>
+
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3">
+                                        <label for="key">Key</label>
+                                        <input type="text" id='key' name="roomkey" class="form-control rounded-0" placeholder="Key">
+                                    </div>
+                    
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3">
+                                        <button id='create-room' class="btn btn-block rounded-0 btn-info">Tạo nhóm</button>
+                                    </div>
+                    
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3" id='room-created'></div>
+                                </div>
+                            </div>
+                        </form>
+					</div>
+					<script>
+						function create(){
+							alert(" Tạo nhóm thành công!");
+						}
+					</script>
+                </div>    
+                <%- include ('footer.ejs') %>
+

@@ -1,0 +1,31 @@
+<%- include ('header.ejs') %>
+            <div class="jumbotron">
+              
+            <h1>Thông tin cá nhân:</h1>
+                <form action="profile" method="GET"></form>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class=" col-md-12 col-lg-12 ">
+                          <table class="table table-user-information">
+                            <tbody>
+                              <tr>
+                                <td>Tên đăng nhập: </td>
+                                <td><%=data[0].username%></td>
+                              </tr>
+                              <tr>
+                                <td>Email: </td>
+                                <td><%=data[0].email%></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+<%- include ('footer.ejs') %>

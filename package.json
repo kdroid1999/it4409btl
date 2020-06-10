@@ -1,0 +1,35 @@
+{
+  "name": "elearning",
+  "version": "0.0.1",
+  "description": "Elearning",
+  "main": "src/app.js",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1",
+    "serve-favicon": "^2.5.0",
+    "session": "^0.1.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "start": "nodemon --watch \"src/\" node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Elearning"
+  ],
+  "author": "khuongduy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/soict-it4409/20192/nhom05/btl.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/soict-it4409/20192/nhom05/btl/issues"
+  },
+  "homepage": "https://gitlab.com/soict-it4409/20192/nhom05/btl#readme"
+}
