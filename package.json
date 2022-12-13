@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "dependencies": {
     "ejs": "^3.1.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.1",
     "mysql": "^2.18.1",
     "serve-favicon": "^2.5.0",
